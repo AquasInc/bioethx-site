@@ -9,6 +9,7 @@ const Form = () => (
     netlify-honeypot="bot-field"
     data-netlify="true"
   >
+    <input type="hidden" name="form-name" value="contact" />
     <input className={hidden} name="bot-field" />
     <input
       id="name"
