@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 
-const ServicesPage = () => (
-  <Layout title="Our Service: Overview and Features" heading="Services">
+const ServicePage = () => (
+  <Layout title="Our Service: Overview and Features" heading="Service">
     <h2>Overview</h2>
     <p>
       BioEthx™ has conducted research into private sector practices in
@@ -48,4 +48,4 @@ const ServicesPage = () => (
   </Layout>
 );
 
-export default ServicesPage;
+export default ServicePage;

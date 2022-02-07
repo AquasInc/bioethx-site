@@ -24,8 +24,8 @@ const Layout = ({ title, heading, children }) => (
           </Link>
         </li>
         <li className={navLinkItem}>
-          <Link to="/services" className={navLinkText}>
-            Services
+          <Link to="/service" className={navLinkText}>
+            Service
           </Link>
         </li>
       </ul>
