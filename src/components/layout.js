@@ -28,6 +28,11 @@ const Layout = ({ title, heading, children }) => (
             Service
           </Link>
         </li>
+        <li className={navLinkItem}>
+          <Link to="/contact" className={navLinkText}>
+            Contact
+          </Link>
+        </li>
       </ul>
     </nav>
     <main>
