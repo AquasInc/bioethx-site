@@ -1,11 +1,11 @@
 import React from "react";
+import Layout from "../components/layout";
 
 const IndexPage = () => (
-  <main>
-    <title>
-      BioethX.com | Online Medical Ethics Consultation Management System
-    </title>
-    <h1>Advancing the Practice of Healthcare Ethics Consultation</h1>
+  <Layout
+    title={"Online Medical Ethics Consultation Management System"}
+    heading={"Advancing the Practice of Healthcare Ethics Consultation"}
+  >
     <p>
       BioEthx™ offers the first online web service for assisting in the
       management of medical ethics consultations. Our service provides medical
@@ -31,7 +31,7 @@ const IndexPage = () => (
       We stand ready to engage with you to show you around this exciting new
       service through an online demonstration.
     </p>
-  </main>
+  </Layout>
 );
 
 export default IndexPage;
