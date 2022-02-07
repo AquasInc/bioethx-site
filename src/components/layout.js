@@ -18,15 +18,21 @@ const Layout = ({ title, heading, children }) => (
             Home
           </Link>
         </li>
-        <li>
+        <li className={navLinkItem}>
           <Link to="/about" className={navLinkText}>
             About
+          </Link>
+        </li>
+        <li className={navLinkItem}>
+          <Link to="/services" className={navLinkText}>
+            Services
           </Link>
         </li>
       </ul>
     </nav>
     <main>
       <h1 className={mainHeading}>{heading}</h1>
+      <hr />
       {children}
     </main>
   </div>
