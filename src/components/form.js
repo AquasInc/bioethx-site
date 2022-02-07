@@ -1,10 +1,15 @@
 import React from "react";
-import { formInput, submitBtn } from "./form.module.css";
+import { formInput, hidden } from "./form.module.css";
 
 const Form = () => (
-  <form id="myForm" name="contact" method="POST">
-    <input type="hidden" name="form-name" value="contact" />
-
+  <form
+    id="myForm"
+    name="contact"
+    method="POST"
+    netlify-honeypot="bot-field"
+    data-netlify="true"
+  >
+    <input className={hidden} name="bot-field" />
     <input
       id="name"
       className={formInput}
@@ -34,7 +39,7 @@ const Form = () => (
       name="message"
       id="message"
     ></textarea>
-    <input className={submitBtn} type="submit" value="Send" />
+    <input type="submit" value="Send" />
   </form>
 );
 
