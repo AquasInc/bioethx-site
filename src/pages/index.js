@@ -3,8 +3,8 @@ import Layout from "../components/layout";
 
 const IndexPage = () => (
   <Layout
-    title={"Online Medical Ethics Consultation Management System"}
-    heading={"Advancing the Practice of Healthcare Ethics Consultation"}
+    title="Online Medical Ethics Consultation Management System"
+    heading="Advancing the Practice of Healthcare Ethics Consultation"
   >
     <p>
       BioEthx™ offers the first online web service for assisting in the
