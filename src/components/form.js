@@ -1,5 +1,5 @@
 import React from "react";
-import { formInput, hidden } from "./form.module.css";
+import { formInput } from "./form.module.css";
 
 const Form = () => (
   <form
@@ -10,7 +10,7 @@ const Form = () => (
     data-netlify="true"
   >
     <input type="hidden" name="form-name" value="contact" />
-    <input className={hidden} name="bot-field" />
+    <input type="hidden" name="bot-field" />
     <input
       id="name"
       className={formInput}
