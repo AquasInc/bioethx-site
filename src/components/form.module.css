@@ -1,5 +1,11 @@
+.contact-form {
+  padding-right: 1rem;
+}
+
 .form-input {
   display: flex;
+  width: 100%;
   flex-direction: column;
   margin: 1rem 0;
+  margin-right: 1rem;
 }

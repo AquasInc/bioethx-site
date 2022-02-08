@@ -1,9 +1,10 @@
 import React from "react";
-import { formInput } from "./form.module.css";
+import { formInput, contactForm } from "./form.module.css";
 
 const Form = () => (
   <form
     id="myForm"
+    className={contactForm}
     name="contact"
     method="POST"
     netlify-honeypot="bot-field"
