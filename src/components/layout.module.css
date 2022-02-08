@@ -10,12 +10,9 @@
 
 .nav-links {
   display: flex;
+  justify-content: space-around;
   list-style: none;
   padding-left: 0;
-}
-
-.nav-link-item {
-  padding-right: 2rem;
 }
 
 .nav-link-text {

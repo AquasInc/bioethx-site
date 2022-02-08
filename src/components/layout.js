@@ -4,7 +4,6 @@ import {
   container,
   mainHeading,
   navLinks,
-  navLinkItem,
   navLinkText,
 } from "./layout.module.css";
 
@@ -13,22 +12,22 @@ const Layout = ({ title, heading, children }) => (
     <title>BioethX | {title}</title>
     <nav>
       <ul className={navLinks}>
-        <li className={navLinkItem}>
+        <li>
           <Link to="/" className={navLinkText}>
             Home
           </Link>
         </li>
-        <li className={navLinkItem}>
+        <li>
           <Link to="/about" className={navLinkText}>
             About
           </Link>
         </li>
-        <li className={navLinkItem}>
+        <li>
           <Link to="/service" className={navLinkText}>
             Service
           </Link>
         </li>
-        <li className={navLinkItem}>
+        <li>
           <Link to="/contact" className={navLinkText}>
             Contact
           </Link>
