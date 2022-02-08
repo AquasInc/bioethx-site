@@ -5,11 +5,9 @@
 
 .form-input {
   margin: 1rem 0;
-  margin-right: 1rem;
 }
 
 .submitBtn {
   display: flex;
   justify-content: flex-end;
-  padding-right: 1rem;
 }
