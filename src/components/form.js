@@ -1,5 +1,5 @@
 import React from "react";
-import { formInput, contactForm } from "./form.module.css";
+import { formInput, contactForm, submitBtn } from "./form.module.css";
 
 const Form = () => (
   <form
@@ -41,7 +41,9 @@ const Form = () => (
       name="message"
       id="message"
     ></textarea>
-    <input type="submit" value="Send" />
+    <div className={submitBtn}>
+      <input type="submit" value="Send" />
+    </div>
   </form>
 );
 
