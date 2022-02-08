@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 
 const IndexPage = () => (
@@ -6,6 +7,10 @@ const IndexPage = () => (
     title="Online Medical Ethics Consultation Management System"
     heading="Advancing the Practice of Healthcare Ethics Consultation"
   >
+    <StaticImage
+      alt="A meeting of medical professionals"
+      src="https://bioethx.com/img/licensed/iStock_000014737857Medium.jpg"
+    />
     <p>
       BioEthx™ offers the first online web service for assisting in the
       management of medical ethics consultations. Our service provides medical
