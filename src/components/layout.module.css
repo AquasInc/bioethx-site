@@ -9,13 +9,30 @@
   text-align: center;
 }
 
+.navbar {
+  background: #333;
+}
+
 .nav-links {
+  margin: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   list-style: none;
-  padding-left: 0;
+}
+
+.nav-link-item {
+  padding: 0.75rem;
 }
 
 .nav-link-text {
-  color: black;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.nav-link-text:hover {
+  font-weight: bold;
+}
+
+.nav-link-text:active {
+  color: white;
 }
