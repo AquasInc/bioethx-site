@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import {
   container,
+  flexContainer,
   mainHeading,
   navbar,
   navLinks,
@@ -13,7 +14,7 @@ const Layout = ({ title, heading, children }) => (
   <div>
     <title>BioethX | {title}</title>
     <nav className={navbar}>
-      <div className={container}>
+      <div id={flexContainer} className={container}>
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
