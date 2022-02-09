@@ -1,7 +1,7 @@
 .container {
   margin: auto;
-  max-width: 500px;
-  font-family: sans-serif;
+  width: 85%;
+  max-width: 1366px;
 }
 
 .main-heading {
