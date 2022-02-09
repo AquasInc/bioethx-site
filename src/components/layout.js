@@ -1,44 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
-import {
-  container,
-  flexContainer,
-  mainHeading,
-  navbar,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-} from "./layout.module.css";
+import Nav from "./nav";
+import { container, mainHeading } from "./layout.module.css";
 
 const Layout = ({ title, heading, children }) => (
   <div>
     <title>BioethX | {title}</title>
-    <nav className={navbar}>
-      <div id={flexContainer} className={container}>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/service" className={navLinkText}>
-              Service
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/contact" className={navLinkText}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Nav />
     <main className={container}>
       <h1 className={mainHeading}>{heading}</h1>
       <hr />

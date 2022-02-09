@@ -4,41 +4,7 @@
   max-width: 1366px;
 }
 
-#flex-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .main-heading {
   color: dodgerblue;
   text-align: center;
-}
-
-.navbar {
-  background: #333;
-}
-
-.nav-links {
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-}
-
-.nav-link-item {
-  padding: 0.75rem;
-}
-
-.nav-link-text {
-  color: #ccc;
-  text-decoration: none;
-}
-
-.nav-link-text:hover {
-  font-weight: bold;
-}
-
-.nav-link-text:active {
-  color: white;
 }
