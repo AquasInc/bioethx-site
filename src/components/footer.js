@@ -4,7 +4,7 @@ import { container, footer } from "./footer.module.css";
 const Footer = () => (
   <footer className={footer}>
     <div className={container}>
-      <p>hello footer</p>
+      <p>&copy; 2022 BioEthx™</p>
     </div>
   </footer>
 );
