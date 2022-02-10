@@ -21,19 +21,33 @@ const Form = () => (
       required
     />
     <input
+      id="email"
+      className={formInput}
+      type="text"
+      name="email"
+      placeholder="email"
+      required
+    />
+    <input
       id="number"
       className={formInput}
       type="text"
       name="number"
       placeholder="number"
-      required
     />
     <input
-      id="zipcode"
+      id="organization"
       className={formInput}
       type="text"
-      name="zipcode"
-      placeholder="zipcode"
+      name="organization"
+      placeholder="organization"
+    />
+    <input
+      id="title"
+      className={formInput}
+      type="text"
+      name="title"
+      placeholder="title"
     />
     <textarea
       className={formInput}
