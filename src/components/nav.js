@@ -27,6 +27,16 @@ const Nav = () => (
             Contact
           </Link>
         </li>
+        <li className={navLinkItem}>
+          <a
+            href="https://online.bioethx.net/"
+            target="_blank"
+            rel="noreferrer"
+            className={navLinkText}
+          >
+            Login
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
