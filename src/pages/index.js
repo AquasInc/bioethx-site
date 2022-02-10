@@ -5,11 +5,12 @@ import "../styles/index.css";
 
 const IndexPage = () => (
   <Layout title="Online Medical Ethics Consultation Management System">
+    <StaticImage
+      className="hero"
+      alt="A meeting of medical professionals"
+      src="https://bioethx.com/img/licensed/iStock_000014737857Medium.jpg"
+    />
     <main className="container">
-      <StaticImage
-        alt="A meeting of medical professionals"
-        src="https://bioethx.com/img/licensed/iStock_000014737857Medium.jpg"
-      />
       <h1 className="main-heading">
         Advancing the Practice of Healthcare Ethics Consultation
       </h1>
