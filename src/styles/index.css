@@ -13,3 +13,9 @@
   color: dodgerblue;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
+}
