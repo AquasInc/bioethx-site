@@ -34,3 +34,9 @@
 .nav-link-text:active {
   color: white;
 }
+
+@media (max-width: 768px) {
+  #flex-container {
+    justify-content: space-between;
+  }
+}
