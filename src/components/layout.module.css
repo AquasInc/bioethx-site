@@ -5,6 +5,12 @@
 
 .page-wrap {
   padding-top: 2.75rem;
-  padding-bottom: 27rem;
+  padding-bottom: 20rem;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .page-wrap {
+    padding-bottom: 40rem;
+  }
 }
