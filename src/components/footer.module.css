@@ -19,7 +19,12 @@
 
 .link-text {
   text-decoration: none;
-  color: black;
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.link-text:hover {
+  color: royalblue;
 }
 
 @media (max-width: 768px) {
