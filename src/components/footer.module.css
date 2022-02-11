@@ -3,10 +3,27 @@
   bottom: 0;
   width: 100%;
   background: #ccc;
+  padding: 1rem 0;
 }
 
 .container {
+  display: flex;
   width: 85%;
   max-width: 1366px;
   margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+}
+
+.link-text {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
