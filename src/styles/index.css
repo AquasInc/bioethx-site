@@ -22,4 +22,7 @@
   .hero {
     height: 50vh;
   }
+  .about {
+    margin-top: 2.5rem;
+  }
 }
