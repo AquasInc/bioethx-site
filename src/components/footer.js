@@ -36,7 +36,7 @@ const Footer = () => (
           </Link>
         </p>
         <p>
-          <Link to="#" className={linkText}>
+          <Link to="/terms" className={linkText}>
             Terms & Conditions
           </Link>
         </p>
