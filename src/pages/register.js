@@ -4,7 +4,7 @@ import Form from "../components/form";
 import "../styles/index.css";
 
 const RegistrationPage = () => (
-  <Layout title="Contact Us">
+  <Layout title="Register">
     <main className="container">
       <h1 className="main-heading">Register</h1>
       <div className="two-column-layout">
