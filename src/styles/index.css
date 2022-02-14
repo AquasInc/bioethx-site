@@ -7,6 +7,7 @@
   width: 85%;
   max-width: 1366px;
   margin: auto;
+  padding-bottom: 2rem;
 }
 
 .main-heading {
@@ -32,6 +33,20 @@
   padding: 1rem;
 }
 
+/* main aside */
+.main-aside {
+  display: flex;
+}
+
+.sidebar {
+  background: #ccc;
+  padding-right: 1.5rem;
+}
+
+.main-article {
+  padding: 0 1rem;
+}
+
 @media (max-width: 768px) {
   .hero {
     height: 50vh;
@@ -41,6 +56,12 @@
   }
   .two-column-layout {
     flex-direction: column;
+    padding: 0;
+  }
+  .sidebar {
+    display: none;
+  }
+  .main-article {
     padding: 0;
   }
 }
