@@ -2,7 +2,8 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: #ccc;
+  background: #333;
+  color: #ccc;
   padding: 1rem 0;
 }
 
@@ -19,12 +20,16 @@
 
 .link-text {
   text-decoration: none;
-  color: dodgerblue;
+  color: lightskyblue;
   font-weight: bold;
 }
 
 .link-text:hover {
-  color: royalblue;
+  text-decoration: underline;
+}
+
+.link-text:active {
+  color: #f4f4f4;
 }
 
 @media (max-width: 768px) {

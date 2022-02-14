@@ -44,11 +44,9 @@ const Footer = () => (
       </div>
       <div className={column}>
         <p>
-          <strong>
-            <a href="http://bioethxcafe.com/" className={linkText}>
-              BioEthx Cafe
-            </a>
-          </strong>
+          <a href="http://bioethxcafe.com/" className={linkText}>
+            BioEthx Cafe
+          </a>
           <br />
         </p>
         <p>
