@@ -1,15 +1,11 @@
 import React from "react";
 import Layout from "../components/layout";
-import { StaticImage } from "gatsby-plugin-image";
+import Hero from "../components/hero";
 import "../styles/index.css";
 
 const IndexPage = () => (
   <Layout title="Online Medical Ethics Consultation Management System">
-    <StaticImage
-      className="hero"
-      alt="A meeting of medical professionals"
-      src="https://bioethx.com/img/licensed/iStock_000014737857Medium.jpg"
-    />
+    <Hero />
     <main className="container">
       <h1 className="main-heading">
         Advancing the Practice of Healthcare Ethics Consultation

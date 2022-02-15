@@ -1,8 +1,3 @@
-.hero {
-  width: 100%;
-  height: 70vh;
-}
-
 .container {
   width: 85%;
   max-width: 1366px;
@@ -39,9 +34,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero {
-    height: 50vh;
-  }
   .about {
     margin-top: 2.5rem;
   }
