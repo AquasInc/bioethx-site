@@ -14,10 +14,6 @@
   margin-top: 5rem;
 }
 
-.main-aside {
-  display: flex;
-}
-
 @media (max-width: 768px) {
   .about {
     margin-top: 2.5rem;
