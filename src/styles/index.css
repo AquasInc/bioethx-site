@@ -14,21 +14,6 @@
   margin-top: 5rem;
 }
 
-.two-column-layout {
-  background: #f4f4f4;
-  border-radius: 15px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.text-div {
-  flex: 1;
-  padding: 1rem;
-}
-
-/* main aside */
 .main-aside {
   display: flex;
 }
@@ -36,9 +21,5 @@
 @media (max-width: 768px) {
   .about {
     margin-top: 2.5rem;
-  }
-  .two-column-layout {
-    flex-direction: column;
-    padding: 0;
   }
 }
