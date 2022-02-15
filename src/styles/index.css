@@ -38,10 +38,6 @@
   display: flex;
 }
 
-.main-article {
-  padding: 0 1rem;
-}
-
 @media (max-width: 768px) {
   .hero {
     height: 50vh;
@@ -51,9 +47,6 @@
   }
   .two-column-layout {
     flex-direction: column;
-    padding: 0;
-  }
-  .main-article {
     padding: 0;
   }
 }

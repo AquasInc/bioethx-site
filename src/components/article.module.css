@@ -1,0 +1,9 @@
+.main-article {
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .main-article {
+    padding: 0;
+  }
+}
