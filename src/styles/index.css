@@ -38,11 +38,6 @@
   display: flex;
 }
 
-.sidebar {
-  background: #ccc;
-  padding-right: 1.5rem;
-}
-
 .main-article {
   padding: 0 1rem;
 }
@@ -57,9 +52,6 @@
   .two-column-layout {
     flex-direction: column;
     padding: 0;
-  }
-  .sidebar {
-    display: none;
   }
   .main-article {
     padding: 0;
