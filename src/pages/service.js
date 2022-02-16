@@ -25,8 +25,8 @@ const ServicePage = () => (
       </aside>
       <main className="container">
         <h1 className="main-heading">Service</h1>
-        <hr />
         <article className={mainArticle}>
+          <hr />
           <h2>Overview</h2>
           <p>
             BioEthx™ has conducted research into private sector practices in

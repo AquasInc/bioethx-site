@@ -1,20 +1,21 @@
 .article-aside {
   display: flex;
+  flex: auto;
 }
 
 .main-article {
-  padding: 0 1rem;
+  padding: 0 1.25rem;
 }
 
 .sidebar {
   background: #ccc;
   padding-right: 1.5rem;
+  padding-top: 6rem;
+  min-width: max-content;
+  width: 20%;
 }
 
 @media (max-width: 768px) {
-  .main-article {
-    padding: 0;
-  }
   .sidebar {
     display: none;
   }

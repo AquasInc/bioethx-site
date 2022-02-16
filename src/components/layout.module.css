@@ -8,4 +8,7 @@
 .page-wrap {
   padding-top: 2.75rem;
   z-index: 1;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
 }
