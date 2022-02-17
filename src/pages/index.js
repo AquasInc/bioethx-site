@@ -7,7 +7,9 @@ const IndexPage = () => (
   <Layout title="Online Medical Ethics Consultation Management System">
     <Hero />
     <main className="container">
-      <h1 className="main-heading">Hello Ramses</h1>
+      <h1 className="main-heading">
+        Advancing the Practice of Healthcare Ethics Consultation
+      </h1>
       <hr />
       <p>
         BioEthx™ offers the first online web service for assisting in the

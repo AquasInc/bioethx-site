@@ -17,7 +17,7 @@ const Form = () => (
       className={formInput}
       type="text"
       name="name"
-      placeholder="name"
+      placeholder="Name"
       required
     />
     <input
@@ -25,7 +25,7 @@ const Form = () => (
       className={formInput}
       type="text"
       name="email"
-      placeholder="email"
+      placeholder="Email"
       required
     />
     <input
@@ -33,25 +33,25 @@ const Form = () => (
       className={formInput}
       type="text"
       name="number"
-      placeholder="number"
+      placeholder="Number"
     />
     <input
       id="organization"
       className={formInput}
       type="text"
       name="organization"
-      placeholder="organization"
+      placeholder="Organization"
     />
     <input
       id="title"
       className={formInput}
       type="text"
       name="title"
-      placeholder="title"
+      placeholder="Title"
     />
     <textarea
       className={formInput}
-      placeholder="message"
+      placeholder="Message"
       name="message"
       id="message"
     ></textarea>
