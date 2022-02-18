@@ -5,7 +5,7 @@ import { sidebar, btn } from "./sidebar.module.css";
 const Sidebar = ({ onClick }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allMdx {
+      allMdx(sort: { fields: frontmatter___order, order: ASC }) {
         nodes {
           frontmatter {
             title
