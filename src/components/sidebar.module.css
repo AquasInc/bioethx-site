@@ -8,7 +8,14 @@
 
 .btn {
   border: none;
+  padding: 0.5rem;
   background: none;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
