@@ -9,7 +9,7 @@
 }
 
 .logo {
-  display: flex;
+  display: flex !important;
   height: 85%;
 }
 
