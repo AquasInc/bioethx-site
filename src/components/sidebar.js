@@ -5,19 +5,21 @@ import { sidebar, btn } from "./sidebar.module.css";
 const Sidebar = ({ onClick }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allFile(filter: { sourceInstanceName: { eq: "features" } }) {
+      allMdx {
         nodes {
-          name
+          frontmatter {
+            title
+          }
           id
         }
       }
     }
   `);
 
-  const features = data.allFile.nodes.map((node) => (
+  const features = data.allMdx.nodes.map((node) => (
     <li key={node.id}>
       <button className={btn} onClick={onClick}>
-        {node.name}
+        {node.frontmatter.title}
       </button>
     </li>
   ));
