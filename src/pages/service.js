@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Sidebar from "../components/sidebar";
 import { articleAside, mainArticle } from "../styles/article-aside.module.css";
@@ -13,7 +14,7 @@ class ServicePage extends React.Component {
   }
 
   handleClick = (e) => {
-    this.setState({ feature: e.target.textContent });
+    this.setState({ feature: this.props.data.mdx.frontmatter.title });
   };
 
   render() {
@@ -76,4 +77,15 @@ class ServicePage extends React.Component {
     );
   }
 }
+
+export const query = graphql`
+  query {
+    mdx(frontmatter: { order: { eq: 0 } }) {
+      frontmatter {
+        title
+      }
+    }
+  }
+`;
+
 export default ServicePage;
