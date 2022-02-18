@@ -3,5 +3,15 @@ module.exports = {
     title: `bioethx`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "features",
+        path: __dirname + "/features",
+      },
+    },
+  ],
 };

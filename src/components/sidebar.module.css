@@ -1,0 +1,18 @@
+.sidebar {
+  background: #ccc;
+  padding-right: 1.5rem;
+  padding-top: 6rem;
+  min-width: max-content;
+  width: 20%;
+}
+
+.btn {
+  border: none;
+  background: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
