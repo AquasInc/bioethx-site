@@ -15,7 +15,9 @@ class ServicePage extends React.Component {
   }
 
   handleClick = (e) => {
-    this.setState({ feature: this.props.data.mdx.frontmatter.title });
+    this.setState({
+      feature: this.props.data.allMdx.nodes[0].frontmatter.title,
+    });
   };
 
   render() {
@@ -27,7 +29,7 @@ class ServicePage extends React.Component {
             <h1 className="main-heading">{this.state.feature}</h1>
             <article className={mainArticle}>
               <hr />
-              <MDXRenderer>{this.props.data.mdx.body}</MDXRenderer>
+              <MDXRenderer>{this.props.data.allMdx.nodes[0].body}</MDXRenderer>
             </article>
           </main>
         </div>
@@ -38,11 +40,13 @@ class ServicePage extends React.Component {
 
 export const query = graphql`
   query {
-    mdx(frontmatter: { order: { eq: 0 } }) {
-      frontmatter {
-        title
+    allMdx(sort: { fields: frontmatter___order, order: ASC }) {
+      nodes {
+        body
+        frontmatter {
+          title
+        }
       }
-      body
     }
   }
 `;
