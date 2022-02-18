@@ -9,6 +9,7 @@ const Sidebar = ({ onClick }) => {
         nodes {
           frontmatter {
             title
+            order
           }
           id
         }
@@ -18,7 +19,7 @@ const Sidebar = ({ onClick }) => {
 
   const features = data.allMdx.nodes.map((node) => (
     <li key={node.id}>
-      <button className={btn} onClick={onClick}>
+      <button className={btn} onClick={() => onClick(node.frontmatter.order)}>
         {node.frontmatter.title}
       </button>
     </li>

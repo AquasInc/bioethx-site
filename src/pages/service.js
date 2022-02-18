@@ -10,13 +10,13 @@ class ServicePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      feature: "Service",
+      feature: 4,
     };
   }
 
-  handleClick = (e) => {
+  handleClick = (n) => {
     this.setState({
-      feature: this.props.data.allMdx.nodes[0].frontmatter.title,
+      feature: n,
     });
   };
 
@@ -24,12 +24,19 @@ class ServicePage extends React.Component {
     return (
       <Layout title="Our Service: Overview and Features">
         <div className={articleAside}>
-          <Sidebar onClick={this.handleClick} />
+          <Sidebar onClick={(n) => this.handleClick(n)} />
           <main className="container">
-            <h1 className="main-heading">{this.state.feature}</h1>
+            <h1 className="main-heading">
+              {
+                this.props.data.allMdx.nodes[this.state.feature].frontmatter
+                  .title
+              }
+            </h1>
             <article className={mainArticle}>
               <hr />
-              <MDXRenderer>{this.props.data.allMdx.nodes[0].body}</MDXRenderer>
+              <MDXRenderer>
+                {this.props.data.allMdx.nodes[this.state.feature].body}
+              </MDXRenderer>
             </article>
           </main>
         </div>
