@@ -10,7 +10,7 @@ class ServicePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      feature: 4,
+      feature: 0,
     };
   }
 
@@ -26,12 +26,7 @@ class ServicePage extends React.Component {
         <div className={articleAside}>
           <Sidebar onClick={(n) => this.handleClick(n)} />
           <main className="container">
-            <h1 className="main-heading">
-              {
-                this.props.data.allMdx.nodes[this.state.feature].frontmatter
-                  .title
-              }
-            </h1>
+            <h1 className="main-heading">Service</h1>
             <article className={mainArticle}>
               <hr />
               <MDXRenderer>
