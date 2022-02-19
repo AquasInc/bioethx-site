@@ -5,12 +5,12 @@ import "../styles/index.css";
 
 const IndexPage = () => (
   <Layout title="Online Medical Ethics Consultation Management System">
+    <h1 className="main-heading">
+      Advancing the Practice of Healthcare Ethics
+    </h1>
     <Hero />
     <main className="container">
-      <h1 className="main-heading">
-        Advancing the Practice of Healthcare Ethics Consultation
-      </h1>
-      <hr />
+      {/* remember to change consultations to consults */}
       <p>
         BioEthx™ offers the first online web service for assisting in the
         management of medical ethics consultations. Our service provides medical
