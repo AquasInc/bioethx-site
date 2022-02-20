@@ -55,8 +55,8 @@ const Form = () => (
       name="message"
       id="message"
     ></textarea>
-    <div className={submitBtn}>
-      <input type="submit" value="Send" />
+    <div>
+      <input className={submitBtn} type="submit" value="Send" />
     </div>
   </form>
 );
