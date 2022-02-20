@@ -10,7 +10,6 @@ const Layout = ({ title, children }) => (
     <Helmet>
       <link rel="icon" href={favicon} />
     </Helmet>
-    {console.error("Remeber to change consultations to consults")}
     <title>{"BioethX | " + title}</title>
     <Nav />
     <div className={pageWrap}>{children}</div>

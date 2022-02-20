@@ -13,7 +13,9 @@ import {
 const Nav = () => (
   <nav className={navbar}>
     <div id={flexContainer}>
-      <img className={logo} src={branding} alt="BioEthx logo" />
+      <Link to="/" className={logo}>
+        <img src={branding} alt="BioEthx logo" />
+      </Link>
       <ul className={navLinks}>
         <li className={navLinkItem}>
           <Link to="/" className={navLinkText}>

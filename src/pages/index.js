@@ -4,20 +4,19 @@ import Hero from "../components/hero";
 import "../styles/index.css";
 
 const IndexPage = () => (
-  <Layout title="Online Medical Ethics Consultation Management System">
+  <Layout title="Online Medical Ethics consult Management System">
     <h1 className="main-heading">
       Advancing the Practice of Healthcare Ethics
     </h1>
     <Hero />
     <main className="container">
-      {/* remember to change consultations to consults */}
+      {/* remember to change consults to consults */}
       <p>
         BioEthx™ offers the first online web service for assisting in the
-        management of medical ethics consultations. Our service provides medical
+        management of medical ethics consults. Our service provides medical
         ethicists significant short-term benefits in improving productivity,
         compliance and quality of care, while serving as a focal point that
-        encourages improved ethics consultation standards and practices over
-        time.
+        encourages improved ethics consult standards and practices over time.
       </p>
       <p>
         We strive to improve the relevance and value of the service to the
@@ -43,7 +42,7 @@ const IndexPage = () => (
         <p>
           BioEthx™ has designed and developed computer software for the
           management of medical ethics issues in the clinical setting and the
-          consultation processes conducted to properly address them. The company
+          consult processes conducted to properly address them. The company
           embodies considerable expertise in healthcare information technology
           and secure information service delivery over the Internet. We are able
           to leverage the considerable technical resources that have been
@@ -103,9 +102,9 @@ const IndexPage = () => (
         </p>
         <p>
           The mission of BioEthx™ is to meet emerging demand for more
-          comprehensive medical ethics consultation practices by enabling broad
-          use of the first publicly-available computer system for managing even
-          the most complex cases. We strive to deliver the best quality online
+          comprehensive medical ethics consult practices by enabling broad use
+          of the first publicly-available computer system for managing even the
+          most complex cases. We strive to deliver the best quality online
           service, tailored to the evolving requirements of the medical ethics
           community, at the lowest possible price so that the service is
           available and affordable to all ethicists worldwide.
