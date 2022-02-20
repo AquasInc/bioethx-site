@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import branding from "../images/bioethx.png";
 import {
   flexContainer,
   navbar,
@@ -13,11 +13,7 @@ import {
 const Nav = () => (
   <nav className={navbar}>
     <div id={flexContainer}>
-      <StaticImage
-        className={logo}
-        src="../images/bioethx.png"
-        alt="BioEthx logo"
-      />
+      <img className={logo} src={branding} alt="BioEthx logo" />
       <ul className={navLinks}>
         <li className={navLinkItem}>
           <Link to="/" className={navLinkText}>
