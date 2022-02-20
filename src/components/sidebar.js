@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { sidebar, btn } from "./sidebar.module.css";
+import { sidebar, list, btn } from "./sidebar.module.css";
 
 const Sidebar = ({ onClick }) => {
   const data = useStaticQuery(graphql`
@@ -18,7 +18,7 @@ const Sidebar = ({ onClick }) => {
   `);
 
   const features = data.allMdx.nodes.map((node) => (
-    <li key={node.id}>
+    <li key={node.id} className={list}>
       <button className={btn} onClick={() => onClick(node.frontmatter.order)}>
         {node.frontmatter.title}
       </button>

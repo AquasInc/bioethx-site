@@ -6,16 +6,27 @@
   width: 20%;
 }
 
+.list {
+  list-style: none;
+  text-align: end;
+}
+
 .btn {
-  border: none;
+  color: black;
+  border: 0;
   padding: 0.5rem;
   background: none;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .btn:hover {
-  background: #f4f4f4;
-  border-radius: 5px;
+  color: #444;
+}
+
+.btn:active {
+  border-right: 5px solid dodgerblue;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
