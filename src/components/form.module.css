@@ -22,7 +22,7 @@
   background: dodgerblue;
   color: #fff;
   border: none;
-  border-radius: 7px;
+  border-radius: 7px !important;
   font-weight: bold;
   font-size: 18px;
   padding: 0.5rem;
