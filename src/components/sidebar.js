@@ -1,8 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { sidebar, list, btn } from "./sidebar.module.css";
+import { sidebar, list, btn, btnActive } from "./sidebar.module.css";
 
-const Sidebar = ({ onClick }) => {
+const Sidebar = ({ onClick, feature }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
       allMdx(sort: { fields: frontmatter___order, order: ASC }) {
@@ -19,7 +19,10 @@ const Sidebar = ({ onClick }) => {
 
   const features = data.allMdx.nodes.map((node) => (
     <li key={node.id} className={list}>
-      <button className={btn} onClick={() => onClick(node.frontmatter.order)}>
+      <button
+        className={node.frontmatter.order === feature ? btnActive : btn}
+        onClick={() => onClick(node.frontmatter.order)}
+      >
         {node.frontmatter.title}
       </button>
     </li>

@@ -24,7 +24,10 @@ class ServicePage extends React.Component {
     return (
       <Layout title="Our Service: Overview and Features">
         <div className={articleAside}>
-          <Sidebar onClick={(n) => this.handleClick(n)} />
+          <Sidebar
+            feature={this.state.feature}
+            onClick={(n) => this.handleClick(n)}
+          />
           <main className="container">
             <h1 className="main-heading">Service</h1>
             <article className={mainArticle}>
