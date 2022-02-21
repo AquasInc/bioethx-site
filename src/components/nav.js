@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import MobileMenu from "./mobile-menu";
-import branding from "../images/bioethx.png";
 import {
   flexContainer,
   navbar,
@@ -33,10 +33,13 @@ class Nav extends React.Component {
         <div id={flexContainer}>
           <Link
             to="/"
-            className={logo}
             onClick={this.state["mobile-menu"] ? this.handleClick : () => {}}
           >
-            <img src={branding} alt="BioEthx logo" />
+            <StaticImage
+              src="../images/bioethx.png"
+              alt="BioEthx logo"
+              className={logo}
+            />
           </Link>
           <ul className={navLinks}>
             <li className={navLinkItem}>

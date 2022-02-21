@@ -9,8 +9,7 @@
 }
 
 .logo {
-  display: flex !important;
-  height: 80%;
+  width: 80px;
 }
 
 .navbar {
@@ -64,6 +63,7 @@
   #flex-container {
     width: 90%;
   }
+
   .nav-links {
     display: none;
   }
