@@ -10,8 +10,7 @@ const IndexPage = () => (
     </h1>
     <Hero />
     <main className="container">
-      {/* remember to change consults to consults */}
-      <p>
+      <p className="about">
         BioEthx™ offers the first online web service for assisting in the
         management of medical ethics consults. Our service provides medical
         ethicists significant short-term benefits in improving productivity,
@@ -38,6 +37,7 @@ const IndexPage = () => (
       </p>
       <section className="about">
         <h1 className="main-heading">About Us</h1>
+        <hr />
         <h2>Company</h2>
         <p>
           BioEthx™ has designed and developed computer software for the
