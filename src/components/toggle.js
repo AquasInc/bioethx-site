@@ -3,7 +3,7 @@ import { toggleBtn } from "./toggle.module.css";
 
 const Toggle = ({ onClick }) => (
   <button className={toggleBtn} onClick={onClick}>
-    {"< >"}
+    {"+"}
   </button>
 );
 
