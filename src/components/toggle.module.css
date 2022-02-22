@@ -9,9 +9,9 @@
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  background: #f4f4f4;
+  background: #fff;
   box-shadow: 0px 2px 7px 3px rgba(0, 0, 0, 0.33);
-  color: skyblue;
+  color: dodgerblue;
   border-radius: 50%;
   border: none;
   overflow: hidden;
