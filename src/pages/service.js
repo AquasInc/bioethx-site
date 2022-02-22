@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../components/layout";
 import Sidebar from "../components/sidebar";
+import Toggle from "../components/toggle";
 import { articleAside, mainArticle } from "../styles/article-aside.module.css";
 import "../styles/index.css";
 
@@ -11,6 +12,7 @@ class ServicePage extends React.Component {
     super(props);
     this.state = {
       feature: 0,
+      "mobile-menu": false,
     };
   }
 
@@ -20,13 +22,21 @@ class ServicePage extends React.Component {
     });
   };
 
+  toggleMenu = () => {
+    this.setState({
+      "mobile-menu": !this.state["mobile-menu"],
+    });
+  };
+
   render() {
     return (
-      <Layout title="Our Service: Overview and Features">
+      <Layout id="top" title="Our Service: Overview and Features">
         <div className={articleAside}>
           <Sidebar
             feature={this.state.feature}
             onClick={(n) => this.handleClick(n)}
+            toggleMenu={this.toggleMenu}
+            mobile={this.state["mobile-menu"]}
           />
           <main className="container">
             <h1 className="main-heading">Service</h1>
@@ -38,6 +48,7 @@ class ServicePage extends React.Component {
             </article>
           </main>
         </div>
+        <Toggle onClick={this.toggleMenu} />
       </Layout>
     );
   }
