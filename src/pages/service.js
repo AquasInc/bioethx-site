@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Sidebar from "../components/sidebar";
 import Toggle from "../components/toggle";
@@ -29,6 +30,10 @@ class ServicePage extends React.Component {
   };
 
   render() {
+    const image = getImage(
+      this.props.data.allMdx.nodes[this.state.feature].frontmatter.image
+    );
+
     return (
       <Layout id="top" title="Our Service: Overview and Features">
         <div className={articleAside}>
@@ -42,6 +47,7 @@ class ServicePage extends React.Component {
             <h1 className="main-heading">Service</h1>
             <article className={mainArticle}>
               <hr />
+              <GatsbyImage image={image} />
               <MDXRenderer>
                 {this.props.data.allMdx.nodes[this.state.feature].body}
               </MDXRenderer>
@@ -61,6 +67,11 @@ export const query = graphql`
         body
         frontmatter {
           title
+          image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
       }
     }

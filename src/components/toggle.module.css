@@ -16,6 +16,7 @@
   border: none;
   overflow: hidden;
   padding: 0;
+  z-index: 1;
 }
 
 @media (min-width: 769px) {
