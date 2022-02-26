@@ -54,7 +54,7 @@ class ServicePage extends React.Component {
             </article>
           </main>
         </div>
-        <Toggle onClick={this.toggleMenu} />
+        <Toggle mobile={this.state["mobile-menu"]} onClick={this.toggleMenu} />
       </Layout>
     );
   }
