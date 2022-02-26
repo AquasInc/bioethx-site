@@ -2,20 +2,38 @@ import React from "react";
 import { Link } from "gatsby";
 import { navLinks, navLinkItem, navLinkText } from "./mobile-menu.module.css";
 
-const MobileMenu = ({ onClick }) => (
+const MobileMenu = ({ onClick, location }) => (
   <ul className={navLinks}>
     <li className={navLinkItem}>
-      <Link to="/" className={navLinkText} onClick={onClick}>
+      <Link
+        to="/"
+        className={navLinkText}
+        onClick={(e) =>
+          e.target.attributes.href.value === location ? onClick() : ""
+        }
+      >
         Home
       </Link>
     </li>
     <li className={navLinkItem}>
-      <Link to="/service" className={navLinkText} onClick={onClick}>
+      <Link
+        to="/service"
+        className={navLinkText}
+        onClick={(e) =>
+          e.target.attributes.href.value === location ? onClick() : ""
+        }
+      >
         Service
       </Link>
     </li>
     <li className={navLinkItem}>
-      <Link to="/register" className={navLinkText} onClick={onClick}>
+      <Link
+        to="/register"
+        className={navLinkText}
+        onClick={(e) =>
+          e.target.attributes.href.value === location ? onClick() : ""
+        }
+      >
         Register
       </Link>
     </li>

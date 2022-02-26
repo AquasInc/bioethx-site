@@ -35,7 +35,11 @@ class ServicePage extends React.Component {
     );
 
     return (
-      <Layout id="top" title="Our Service: Overview and Features">
+      <Layout
+        id="top"
+        title="Our Service: Overview and Features"
+        location={this.props.location.pathname}
+      >
         <div className={articleAside}>
           <Sidebar
             feature={this.state.feature}

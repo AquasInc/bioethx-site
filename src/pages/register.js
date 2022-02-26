@@ -4,8 +4,8 @@ import Form from "../components/form";
 import "../styles/index.css";
 import { twoColumnLayout, columnDiv } from "../styles/register.module.css";
 
-const RegistrationPage = () => (
-  <Layout title="Register">
+const RegistrationPage = ({ location }) => (
+  <Layout title="Register" location={location.pathname}>
     <main className="container">
       <h1 className="main-heading">Register</h1>
       <div className={twoColumnLayout}>

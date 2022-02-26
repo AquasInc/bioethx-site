@@ -3,8 +3,11 @@ import Layout from "../components/layout";
 import Hero from "../components/hero";
 import "../styles/index.css";
 
-const IndexPage = () => (
-  <Layout title="Online Medical Ethics consult Management System">
+const IndexPage = ({ location }) => (
+  <Layout
+    title="Online Medical Ethics consult Management System"
+    location={location.pathname}
+  >
     <h1 className="main-heading">
       Advancing the Practice of Healthcare Ethics
     </h1>

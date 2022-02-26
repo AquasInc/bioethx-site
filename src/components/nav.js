@@ -75,7 +75,10 @@ class Nav extends React.Component {
           </button>
         </div>
         {this.state["mobile-menu"] ? (
-          <MobileMenu onClick={this.handleClick} />
+          <MobileMenu
+            location={this.props.location}
+            onClick={this.handleClick}
+          />
         ) : (
           ""
         )}

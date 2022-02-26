@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import "../styles/index.css";
 
-const PrivacyPolicyPage = () => (
-  <Layout title="Privacy Policy">
+const PrivacyPolicyPage = ({ location }) => (
+  <Layout title="Privacy Policy" location={location.pathname}>
     <main className="container">
       <h1 className="main-heading">Privacy Policy</h1>
       <hr />

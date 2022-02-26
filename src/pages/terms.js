@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import "../styles/index.css";
 
-const TermsAndConditionsPage = () => (
-  <Layout title="Terms & Conditions">
+const TermsAndConditionsPage = ({ location }) => (
+  <Layout title="Terms & Conditions" location={location.pathname}>
     <main className="container">
       <h1 className="main-heading">BioEthx Terms & Conditions</h1>
       <hr />

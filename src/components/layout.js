@@ -5,13 +5,13 @@ import Footer from "./footer";
 import favicon from "../../static/favicon.ico";
 import { pageContainer, pageWrap } from "./layout.module.css";
 
-const Layout = ({ title, children }) => (
+const Layout = ({ title, children, location }) => (
   <div className={pageContainer}>
     <Helmet>
       <link rel="icon" href={favicon} />
     </Helmet>
     <title>{"BioethX | " + title}</title>
-    <Nav />
+    <Nav location={location} />
     <div className={pageWrap}>{children}</div>
     <Footer />
   </div>
