@@ -9,7 +9,7 @@ const MobileMenu = ({ onClick, location }) => (
         to="/"
         className={navLinkText}
         onClick={(e) =>
-          e.target.attributes.href.value === location ? onClick() : ""
+          e.target.attributes.href.value === location ? onClick() : null
         }
       >
         Home
@@ -20,7 +20,7 @@ const MobileMenu = ({ onClick, location }) => (
         to="/service"
         className={navLinkText}
         onClick={(e) =>
-          e.target.attributes.href.value === location ? onClick() : ""
+          e.target.attributes.href.value === location ? onClick() : null
         }
       >
         Service
@@ -31,7 +31,7 @@ const MobileMenu = ({ onClick, location }) => (
         to="/register"
         className={navLinkText}
         onClick={(e) =>
-          e.target.attributes.href.value === location ? onClick() : ""
+          e.target.attributes.href.value === location ? onClick() : null
         }
       >
         Register

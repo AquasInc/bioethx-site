@@ -20,7 +20,7 @@
 }
 
 .active {
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
 @media (min-width: 769px) {
