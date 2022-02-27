@@ -8,9 +8,9 @@ import { pageContainer, pageWrap } from "./layout.module.css";
 const Layout = ({ title, children, location }) => (
   <div className={pageContainer}>
     <Helmet>
+      <title>{"BioethX | " + title}</title>
       <link rel="icon" href={favicon} />
     </Helmet>
-    <title>{"staging | " + title}</title>
     <Nav location={location} />
     <div className={pageWrap}>{children}</div>
     <Footer />
