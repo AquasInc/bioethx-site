@@ -15,8 +15,15 @@
   margin-top: 3rem;
 }
 
+.about h1 {
+  margin-top: 3rem;
+  color: dodgerblue;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
-  .about {
+  .about,
+  .about h1 {
     margin-top: 2.5rem;
   }
   .container {
