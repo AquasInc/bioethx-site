@@ -10,7 +10,7 @@ const Layout = ({ title, children, location }) => (
     <Helmet>
       <link rel="icon" href={favicon} />
     </Helmet>
-    <title>{"BioethX | " + title}</title>
+    <title>{"staging | " + title}</title>
     <Nav location={location} />
     <div className={pageWrap}>{children}</div>
     <Footer />
