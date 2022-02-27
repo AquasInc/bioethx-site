@@ -17,17 +17,10 @@ class ServicePage extends React.Component {
     };
   }
 
-  handleClick = (n) => {
-    this.setState({
-      feature: n,
-    });
-  };
+  handleClick = (n) => this.setState({ feature: n });
 
-  toggleMenu = () => {
-    this.setState({
-      "mobile-menu": !this.state["mobile-menu"],
-    });
-  };
+  toggleMenu = () =>
+    this.setState({ "mobile-menu": !this.state["mobile-menu"] });
 
   render() {
     const image = getImage(
