@@ -14,13 +14,12 @@
   color: dodgerblue;
   border-radius: 50%;
   border: none;
-  overflow: hidden;
   padding: 0;
   z-index: 1;
 }
 
 .active {
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 
 @media (min-width: 769px) {

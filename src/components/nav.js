@@ -33,7 +33,11 @@ class Nav extends React.Component {
         <div id={flexContainer}>
           <Link
             to="/"
-            onClick={this.state["mobile-menu"] ? this.handleClick : () => {}}
+            onClick={
+              this.state["mobile-menu"] && this.props.location === "/"
+                ? this.handleClick
+                : null
+            }
           >
             <StaticImage
               src="../images/bioethx.png"
@@ -79,9 +83,7 @@ class Nav extends React.Component {
             location={this.props.location}
             onClick={this.handleClick}
           />
-        ) : (
-          ""
-        )}
+        ) : null}
       </nav>
     );
   }
