@@ -11,31 +11,29 @@ import {
 const Sidebar = ({ onClick, feature, toggleMenu, mobile }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allMdx(sort: { fields: frontmatter___order, order: ASC }) {
+      allContentfulSection(sort: { fields: order, order: ASC }) {
         nodes {
-          frontmatter {
-            title
-            order
-          }
+          order
+          title
           id
         }
       }
     }
   `);
 
-  const features = data.allMdx.nodes.map((node) => (
+  const features = data.allContentfulSection.nodes.map((node) => (
     <li key={node.id} className={list}>
       <a
         href="#top"
-        className={node.frontmatter.order === feature ? btnActive : btn}
+        className={node.order === feature ? btnActive : btn}
         onClick={() => {
-          onClick(node.frontmatter.order);
+          onClick(node.order);
           if (mobile) {
             toggleMenu();
           }
         }}
       >
-        {node.frontmatter.title}
+        {node.title}
       </a>
     </li>
   ));

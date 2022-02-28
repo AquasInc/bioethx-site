@@ -23,9 +23,10 @@ class ServicePage extends React.Component {
     this.setState({ "mobile-menu": !this.state["mobile-menu"] });
 
   render() {
-    const image = getImage(
-      this.props.data.allMdx.nodes[this.state.feature].frontmatter.image
-    );
+    const section =
+      this.props.data.allContentfulSection.nodes[this.state.feature];
+
+    const image = getImage(section.hero.gatsbyImageData);
 
     return (
       <Layout
@@ -44,10 +45,8 @@ class ServicePage extends React.Component {
             <h1 className="main-heading">Service</h1>
             <article className={mainArticle}>
               <hr />
-              <GatsbyImage image={image} />
-              <MDXRenderer>
-                {this.props.data.allMdx.nodes[this.state.feature].body}
-              </MDXRenderer>
+              <GatsbyImage image={image} alt={section.hero.description} />
+              <MDXRenderer>{section.paragraph.childMdx.body}</MDXRenderer>
             </article>
           </main>
         </div>
@@ -59,15 +58,15 @@ class ServicePage extends React.Component {
 
 export const query = graphql`
   query {
-    allMdx(sort: { fields: frontmatter___order, order: ASC }) {
+    allContentfulSection(sort: { fields: order, order: ASC }) {
       nodes {
-        body
-        frontmatter {
-          title
-          image {
-            childImageSharp {
-              gatsbyImageData
-            }
+        hero {
+          description
+          gatsbyImageData
+        }
+        paragraph {
+          childMdx {
+            body
           }
         }
       }
