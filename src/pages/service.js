@@ -46,7 +46,7 @@ class ServicePage extends React.Component {
             <article className={mainArticle}>
               <hr />
               <GatsbyImage image={image} alt={section.hero.description} />
-              <MDXRenderer>{section.paragraph.childMdx.body}</MDXRenderer>
+              <MDXRenderer>{section.body.childMdx.body}</MDXRenderer>
             </article>
           </main>
         </div>
@@ -64,7 +64,7 @@ export const query = graphql`
           description
           gatsbyImageData
         }
-        paragraph {
+        body {
           childMdx {
             body
           }
