@@ -10,6 +10,7 @@ module.exports = {
         defaults: {
           placeholder: "blurred",
           quality: 100,
+          loading: "lazy",
         },
       },
     },

@@ -28,6 +28,9 @@ class Nav extends React.Component {
   };
 
   render() {
+    document.body.style.overflow = this.state["mobile-menu"]
+      ? "hidden"
+      : "auto";
     return (
       <nav className={navbar}>
         <div id={flexContainer}>

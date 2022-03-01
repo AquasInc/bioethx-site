@@ -28,6 +28,10 @@ class ServicePage extends React.Component {
 
     const image = getImage(section.hero.gatsbyImageData);
 
+    document.body.style.overflow = this.state["mobile-menu"]
+      ? "hidden"
+      : "auto";
+
     return (
       <Layout
         id="top"
