@@ -4,7 +4,15 @@ require("dotenv").config({
 
 module.exports = {
   plugins: [
-    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-plugin-image",
+      options: {
+        defaults: {
+          placeholder: "blurred",
+          quality: 100,
+        },
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
