@@ -38,10 +38,6 @@ const Sidebar = ({ onClick, feature, toggleMenu, mobile }) => {
     </li>
   ));
 
-  if (typeof window !== "undefined") {
-    document.body.style.overflow = mobile ? "hidden" : "auto";
-  }
-
   return (
     <aside className={mobile ? mobileMenu : sidebar}>
       <ul>{features}</ul>
