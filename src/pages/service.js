@@ -62,7 +62,7 @@ export const query = graphql`
       nodes {
         hero {
           description
-          gatsbyImageData
+          gatsbyImageData(quality: 100, placeholder: BLURRED)
         }
         body {
           childMdx {
