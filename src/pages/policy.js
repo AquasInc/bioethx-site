@@ -261,7 +261,7 @@ const PrivacyPolicyPage = ({ location }) => (
       <h2>Questions or Comments</h2>
       <p>
         Should you have any privacy-related questions or comments related to
-        this BioEthx Privacy Policy, please send an email to hr@BioEthx.com.
+        this BioEthx Privacy Policy, please send an email to ethics@bioethx.org.
       </p>
       <h2>Updates to this BioEthx Privacy Policy</h2>
       <p>

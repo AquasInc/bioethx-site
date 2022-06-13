@@ -12,12 +12,12 @@ const Footer = () => (
         <p>
           <strong>Email:</strong>
           <br />
-          info@BioEthx.net
+          ethics@bioethx.org
         </p>
         <p>
           <strong>Phone:</strong>
           <br />
-          (301) 654-4000
+          (301) 332-2686
         </p>
         <p>
           <strong>Address:</strong>
