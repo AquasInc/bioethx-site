@@ -12,7 +12,9 @@ const Footer = () => (
         <p>
           <strong>Email:</strong>
           <br />
-          ethics@bioethx.org
+          <a href="mailto:ethics@bioethx.org" className={linkText}>
+            ethics@bioethx.org
+          </a>
         </p>
         <p>
           <strong>Phone:</strong>
