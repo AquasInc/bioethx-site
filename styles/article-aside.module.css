@@ -1,0 +1,23 @@
+.articleAside {
+  display: flex;
+  flex: auto;
+}
+
+.hr {
+  margin: 0 1.25rem;
+}
+
+.mainArticle {
+  padding: 0 1.25rem;
+  height: 85vh;
+  overflow: scroll;
+}
+
+@media (max-width: 768px) {
+  .mainArticle {
+    height: auto;
+  }
+  .mainArticle img {
+    width: 100%;
+  }
+}
