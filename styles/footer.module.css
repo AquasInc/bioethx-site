@@ -1,0 +1,37 @@
+.footer {
+  width: 100%;
+  background: #333;
+  color: #ccc;
+  padding: 1rem 0;
+}
+
+.container {
+  display: flex;
+  width: 85%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+}
+
+.linkText {
+  text-decoration: none;
+  color: lightskyblue;
+  font-weight: bold;
+}
+
+.linkText:hover {
+  text-decoration: underline;
+}
+
+.linkText:active {
+  color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

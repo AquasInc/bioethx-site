@@ -1,0 +1,14 @@
+.pageContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pageWrap {
+  padding-top: 2.75rem;
+  z-index: 1;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+}
