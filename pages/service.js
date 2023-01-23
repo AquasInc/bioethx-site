@@ -47,11 +47,14 @@ const Service = ({ features }) => {
 export default Service;
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join("content"));
+  const files = fs.readdirSync(path.join("content", "service"));
 
   const features = files
     .map((file) => {
-      const contents = fs.readFileSync(path.join("content", file), "utf-8");
+      const contents = fs.readFileSync(
+        path.join("content", "service", file),
+        "utf-8"
+      );
       const { data, content } = matter(contents);
 
       return { data, content };

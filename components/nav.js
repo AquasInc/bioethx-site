@@ -45,6 +45,11 @@ const Nav = () => {
             </Link>
           </li>
           <li className={navLinkItem}>
+            <Link href="/benefits" className={navLinkText}>
+              Benefits
+            </Link>
+          </li>
+          <li className={navLinkItem}>
             <Link href="/register" className={navLinkText}>
               Register
             </Link>
