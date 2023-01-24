@@ -56,9 +56,17 @@ const Nav = () => {
           </li>
           <li className={navLinkItem}>
             <a
+              href="https://bioethxcafe.com/"
+              target="_blank"
+              className={navLinkText}
+            >
+              bioethxcafe
+            </a>
+          </li>
+          <li className={navLinkItem}>
+            <a
               href="https://online.bioethx.net/"
               target="_blank"
-              rel="noreferrer"
               className={navLinkText}
             >
               Login
