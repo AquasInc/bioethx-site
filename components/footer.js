@@ -46,9 +46,9 @@ const Footer = () => (
         <p>&copy; {new Date().getFullYear()} BioEthx™</p>
       </div>
       <div className={column}>
+        <strong>Resources</strong>
+        <hr />
         <p>
-          <strong>Resources</strong>
-          <hr />
           <a href="http://bioethxcafe.com/" className={linkText}>
             BioEthx Cafe
           </a>
