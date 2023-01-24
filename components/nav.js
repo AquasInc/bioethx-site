@@ -53,7 +53,7 @@ const Nav = () => {
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link href={`/${slug}#footer`} className={navLinkText}>
+            <Link href={`${slug}#footer`} className={navLinkText}>
               Resources
             </Link>
           </li>
@@ -79,7 +79,9 @@ const Nav = () => {
           <div className={bar}></div>
         </button>
       </div>
-      {mobile ? <MobileMenu mobile={mobile} setMobile={setMobile} /> : null}
+      {mobile ? (
+        <MobileMenu mobile={mobile} setMobile={setMobile} slug={slug} />
+      ) : null}
     </nav>
   );
 };

@@ -5,7 +5,7 @@ import {
   navLinkText,
 } from "../styles/mobile-menu.module.css";
 
-const MobileMenu = ({ mobile, setMobile }) => (
+const MobileMenu = ({ mobile, setMobile, slug }) => (
   <ul className={navLinks}>
     <li className={navLinkItem}>
       <Link href="/" className={navLinkText} onClick={() => setMobile(!mobile)}>
@@ -19,6 +19,24 @@ const MobileMenu = ({ mobile, setMobile }) => (
         onClick={() => setMobile(!mobile)}
       >
         Service
+      </Link>
+    </li>
+    <li className={navLinkItem}>
+      <Link
+        href="/benefits"
+        className={navLinkText}
+        onClick={() => setMobile(!mobile)}
+      >
+        Benefits
+      </Link>
+    </li>
+    <li className={navLinkItem}>
+      <Link
+        href={`${slug}#footer`}
+        className={navLinkText}
+        onClick={() => setMobile(!mobile)}
+      >
+        Resources
       </Link>
     </li>
     <li className={navLinkItem}>
