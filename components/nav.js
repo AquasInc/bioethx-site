@@ -58,6 +58,7 @@ const Nav = () => {
             <a
               href="https://bioethxcafe.com/"
               target="_blank"
+              rel="noreferrer"
               className={navLinkText}
             >
               bioethxcafe
@@ -67,6 +68,7 @@ const Nav = () => {
             <a
               href="https://online.bioethx.net/"
               target="_blank"
+              rel="noreferrer"
               className={navLinkText}
             >
               Login
