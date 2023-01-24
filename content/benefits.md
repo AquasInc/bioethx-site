@@ -20,6 +20,8 @@ Suggested workflow for progressive execution of ethics consults results in conti
 
 Consultants spend more productive time focusing on meaningful conduct of consultation activities rather than managing logistics and other non-productive activities.
 
+![benefits of automation image](/automation.jpg)
+
 # Collaboration Benefits
 
 ### Information Sharing
@@ -33,6 +35,8 @@ Automatic notification of assignments improves response time to time-sensitive i
 ### Peer Review of Activities
 
 A common view of consult information among consultants in real time helps to improve quality. After-the-fact Evaluation of completed consults can identify areas for improvement.
+
+![collaboration benefits image](/collaboration-benefits.jpg)
 
 # Compliance Benefits
 
@@ -51,6 +55,8 @@ Thorough documentation of consultation activities and decision criteria involved
 ### Support for Audits
 
 Ethics consulting organizations may be subject to both internal and external audits of capabilities and activities. Having a comprehensive and up-to-date record of activities can be of immense value.
+
+![compliance benefits image](/compliance.jpg)
 
 # Business Benefits
 
@@ -73,3 +79,5 @@ Suggested workflow framework can serve as a real-time guide to less experienced 
 ### Risk Mitigation - Litigation Support
 
 In the event of difficult outcomes with potential legal consequences, be prepared to demonstrate adherence to established policy and best practices in ethics consultation.
+
+![business benefits](/business.jpg)
