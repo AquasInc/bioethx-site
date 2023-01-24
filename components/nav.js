@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -17,6 +18,8 @@ import {
 
 const Nav = () => {
   const [mobile, setMobile] = useState(false);
+  const router = useRouter();
+  const slug = router.pathname;
 
   return (
     <nav className={navbar}>
@@ -50,19 +53,14 @@ const Nav = () => {
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link href="/register" className={navLinkText}>
-              Register
+            <Link href={`/${slug}#footer`} className={navLinkText}>
+              Resources
             </Link>
           </li>
           <li className={navLinkItem}>
-            <a
-              href="https://bioethxcafe.com/"
-              target="_blank"
-              rel="noreferrer"
-              className={navLinkText}
-            >
-              bioethxcafe
-            </a>
+            <Link href="/register" className={navLinkText}>
+              Register
+            </Link>
           </li>
           <li className={navLinkItem}>
             <a

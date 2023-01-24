@@ -7,7 +7,7 @@ import {
 } from "../styles/footer.module.css";
 
 const Footer = () => (
-  <footer className={footer}>
+  <footer id="footer" className={footer}>
     <div className={container}>
       <div className={column}>
         <p>
@@ -47,6 +47,8 @@ const Footer = () => (
       </div>
       <div className={column}>
         <p>
+          <strong>Resources</strong>
+          <hr />
           <a href="http://bioethxcafe.com/" className={linkText}>
             BioEthx Cafe
           </a>
