@@ -7,7 +7,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  img {
+  .markdown img {
     width: 100%;
   }
 }

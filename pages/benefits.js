@@ -10,7 +10,10 @@ export default function Benefits({ content }) {
       <main className={styles.container}>
         <h1 className={styles.mainHeading}>Benefits</h1>
         <hr />
-        <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+        <div
+          className="markdown"
+          dangerouslySetInnerHTML={{ __html: marked(content) }}
+        />
       </main>
     </Layout>
   );
