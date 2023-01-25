@@ -17,15 +17,12 @@ import {
 
 const Nav = () => {
   const [mobile, setMobile] = useState(false);
+  const hideMenu = () => (mobile ? setMobile(!mobile) : null);
 
   return (
     <nav className={navbar}>
       <div id={flexContainer}>
-        <Link
-          href="/"
-          onClick={() => (mobile ? setMobile(!mobile) : null)}
-          className={imageWrapper}
-        >
+        <Link href="/" onClick={hideMenu} className={imageWrapper}>
           <Image
             src={bioethxLogo}
             width={80}
@@ -47,9 +44,7 @@ const Nav = () => {
           <div className={bar}></div>
         </button>
       </div>
-      {mobile ? (
-        <MobileMenu mobile={mobile} setMobile={setMobile} slug={slug} />
-      ) : null}
+      {mobile ? <MobileMenu mobile={mobile} setMobile={setMobile} /> : null}
     </nav>
   );
 };

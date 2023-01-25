@@ -1,8 +1,8 @@
 import Link from "next/link";
 import styles from "../styles/menu-item.module.css";
 
-const MenuItem = ({ href, text }) => (
-  <li className={styles.navLinkItem}>
+const MenuItem = ({ href, text, handleClick }) => (
+  <li className={styles.navLinkItem} onClick={handleClick}>
     {/^http/.test(href) ? (
       <a
         href={href}

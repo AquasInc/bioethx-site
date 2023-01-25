@@ -1,64 +1,39 @@
 import Link from "next/link";
+import MenuItem from "./menu-item";
 import {
   navLinks,
   navLinkItem,
   navLinkText,
 } from "../styles/mobile-menu.module.css";
 
-const MobileMenu = ({ mobile, setMobile, slug }) => (
+const MobileMenu = ({ mobile, setMobile }) => (
   <ul className={navLinks}>
-    <li className={navLinkItem}>
-      <Link href="/" className={navLinkText} onClick={() => setMobile(!mobile)}>
-        Home
-      </Link>
-    </li>
-    <li className={navLinkItem}>
-      <Link
-        href="/service"
-        className={navLinkText}
-        onClick={() => setMobile(!mobile)}
-      >
-        Service
-      </Link>
-    </li>
-    <li className={navLinkItem}>
-      <Link
-        href="/benefits"
-        className={navLinkText}
-        onClick={() => setMobile(!mobile)}
-      >
-        Benefits
-      </Link>
-    </li>
-    <li className={navLinkItem}>
-      <Link
-        href={`${slug}#footer`}
-        className={navLinkText}
-        onClick={() => setMobile(!mobile)}
-      >
-        Resources
-      </Link>
-    </li>
-    <li className={navLinkItem}>
-      <Link
-        href="/register"
-        className={navLinkText}
-        onClick={() => setMobile(!mobile)}
-      >
-        Register
-      </Link>
-    </li>
-    <li className={navLinkItem}>
-      <a
-        href="https://online.bioethx.net/"
-        target="_blank"
-        rel="noreferrer"
-        className={navLinkText}
-        onClick={() => setMobile(!mobile)}
-      >
-        Login
-      </a>
-    </li>
+    <MenuItem href={"/"} text={"Home"} handleClick={() => setMobile(!mobile)} />
+    <MenuItem
+      href={"/service"}
+      text={"Service"}
+      handleClick={() => setMobile(!mobile)}
+    />
+    <MenuItem
+      href={"/benefits"}
+      text={"Benefits"}
+      handleClick={() => setMobile(!mobile)}
+    />
+    <MenuItem
+      href={"#footer"}
+      text={"Resources"}
+      handleClick={() => setMobile(!mobile)}
+    />
+    <MenuItem
+      href={"/register"}
+      text={"Register"}
+      handleClick={() => setMobile(!mobile)}
+    />
+    <MenuItem
+      href={"https://online.bioethx.net/"}
+      text={"Login"}
+      handleClick={() => setMobile(!mobile)}
+    />
   </ul>
 );
 
