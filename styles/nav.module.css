@@ -28,23 +28,6 @@
   list-style: none;
 }
 
-.navLinkItem {
-  padding: 0.75rem;
-}
-
-.navLinkText {
-  color: #333;
-  text-decoration: none;
-}
-
-.navLinkText:hover {
-  font-weight: bold;
-}
-
-.navLinkText:active {
-  color: dodgerblue;
-}
-
 .hamburger {
   display: none;
   border: none;

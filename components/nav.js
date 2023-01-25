@@ -3,14 +3,13 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./mobile-menu";
+import MenuItem from "./menu-item";
 import bioethxLogo from "../public/bioethx.png";
 import {
   flexContainer,
   navbar,
   logo,
   navLinks,
-  navLinkItem,
-  navLinkText,
   hamburger,
   bar,
   imageWrapper,
@@ -18,8 +17,6 @@ import {
 
 const Nav = () => {
   const [mobile, setMobile] = useState(false);
-  const router = useRouter();
-  const slug = router.pathname;
 
   return (
     <nav className={navbar}>
@@ -37,41 +34,12 @@ const Nav = () => {
           />
         </Link>
         <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link href="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link href="/service" className={navLinkText}>
-              Service
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link href="/benefits" className={navLinkText}>
-              Benefits
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link href={`${slug}#footer`} className={navLinkText}>
-              Resources
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link href="/register" className={navLinkText}>
-              Register
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <a
-              href="https://online.bioethx.net/"
-              target="_blank"
-              rel="noreferrer"
-              className={navLinkText}
-            >
-              Login
-            </a>
-          </li>
+          <MenuItem href={"/"} text={"Home"} />
+          <MenuItem href={"/service"} text={"Service"} />
+          <MenuItem href={"/benefits"} text={"Benefits"} />
+          <MenuItem href={"#footer"} text={"Resources"} />
+          <MenuItem href={"/register"} text={"Register"} />
+          <MenuItem href={"https://online.bioethx.net/"} text={"Login"} />
         </ul>
         <button className={hamburger} onClick={() => setMobile(!mobile)}>
           <div className={bar}></div>
