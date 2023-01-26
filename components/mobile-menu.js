@@ -1,13 +1,9 @@
 import Link from "next/link";
 import MenuItem from "./menu-item";
-import {
-  navLinks,
-  navLinkItem,
-  navLinkText,
-} from "../styles/mobile-menu.module.css";
+import styles from "../styles/mobile-menu.module.css";
 
 const MobileMenu = ({ mobile, setMobile }) => (
-  <ul className={navLinks}>
+  <ul className={styles.navLinks}>
     <MenuItem href={"/"} text={"Home"} handleClick={() => setMobile(!mobile)} />
     <MenuItem
       href={"/service"}

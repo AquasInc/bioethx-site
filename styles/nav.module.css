@@ -1,4 +1,4 @@
-#flexContainer {
+.flexContainer {
   margin: auto;
   width: 85%;
   max-width: 1366px;
@@ -43,7 +43,7 @@
 }
 
 @media (max-width: 768px) {
-  #flexContainer {
+  .flexContainer {
     width: 90%;
   }
 

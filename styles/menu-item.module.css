@@ -35,6 +35,6 @@
   }
 
   .navLinkText:active {
-    color: dodgerblue;
+    color: #333;
   }
 }
