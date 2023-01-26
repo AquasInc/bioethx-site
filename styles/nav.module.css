@@ -42,6 +42,18 @@
   border-radius: 4px;
 }
 
+.mobileMenu {
+  display: none;
+  position: absolute;
+  background: white;
+  width: 100%;
+  right: 0;
+  list-style: none;
+  top: 30px;
+  height: 100vh;
+  text-align: end;
+}
+
 @media (max-width: 768px) {
   .flexContainer {
     width: 90%;
@@ -50,7 +62,12 @@
   .navLinks {
     display: none;
   }
+
   .hamburger {
+    display: block;
+  }
+
+  .mobileMenu {
     display: block;
   }
 }
