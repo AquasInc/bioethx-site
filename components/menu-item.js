@@ -5,6 +5,12 @@ import styles from "../styles/menu-item.module.css";
 const MenuItem = ({ href, text, handleClick }) => {
   const router = useRouter();
 
+  const atLinkDest = () => {
+    const anchorLink = router.asPath.match(/#.+/);
+    const dest = anchorLink ? anchorLink[0] : router.asPath;
+    return dest === href;
+  };
+
   return (
     <li className={styles.navLinkItem}>
       <span onClick={handleClick}>
@@ -21,7 +27,7 @@ const MenuItem = ({ href, text, handleClick }) => {
           <Link
             href={href}
             className={`${styles.navLinkText} ${
-              router.asPath === href ? styles.active : ""
+              atLinkDest() ? styles.active : ""
             }`}
           >
             {text}
