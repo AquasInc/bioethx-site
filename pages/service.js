@@ -1,12 +1,8 @@
 import Layout from "../components/layout";
 import Sidebar from "../components/sidebar";
 import Toggle from "../components/toggle";
-import {
-  articleAside,
-  mainArticle,
-  hr,
-} from "../styles/article-aside.module.css";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/service.module.css";
+import utils from "../styles/utils.module.css";
 import { useState } from "react";
 import fs from "fs";
 import path from "path";
@@ -19,7 +15,7 @@ const Service = ({ features }) => {
 
   return (
     <Layout title="Our Service">
-      <div className={articleAside}>
+      <div className={styles.articleAside}>
         <Sidebar
           features={features}
           feature={feature}
@@ -27,10 +23,10 @@ const Service = ({ features }) => {
           toggleMenu={toggleMenu}
           setToggleMenu={setToggleMenu}
         />
-        <main className={styles.container}>
-          <h1 className={styles.mainHeading}>Service</h1>
-          <hr className={hr} />
-          <article className={mainArticle}>
+        <main className={utils.container}>
+          <h1 className={utils.mainHeading}>Service</h1>
+          <hr className={styles.hr} />
+          <article className={styles.mainArticle}>
             <div
               dangerouslySetInnerHTML={{
                 __html: marked(features[feature].content),

@@ -1,10 +1,10 @@
 import Layout from "../components/layout";
-import styles from "../styles/Home.module.css";
+import utils from "../styles/utils.module.css";
 
 const PrivacyPolicyPage = ({ location }) => (
   <Layout title="Privacy Policy">
-    <main className={styles.container}>
-      <h1 className={styles.mainHeading}>Privacy Policy</h1>
+    <main className={utils.container}>
+      <h1 className={utils.mainHeading}>Privacy Policy</h1>
       <hr />
       <p>
         BioEthx, Inc. and its subsidiaries (collectively "BioEthx") are

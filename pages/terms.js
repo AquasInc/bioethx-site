@@ -1,10 +1,10 @@
 import Layout from "../components/layout";
-import styles from "../styles/Home.module.css";
+import utils from "../styles/utils.module.css";
 
 const TermsAndConditionsPage = ({ location }) => (
   <Layout title="Terms & Conditions">
-    <main className={styles.container}>
-      <h1 className={styles.mainHeading}>BioEthx Terms & Conditions</h1>
+    <main className={utils.container}>
+      <h1 className={utils.mainHeading}>BioEthx Terms & Conditions</h1>
       <hr />
       <p>
         This website, including any subsite accessible through the homepage (the

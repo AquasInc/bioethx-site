@@ -2,15 +2,16 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import styles from "../styles/Home.module.css";
+import utils from "../styles/utils.module.css";
 
 export default function Home() {
   return (
     <Layout title="Online Medical Ethics consult Management System">
-      <h1 className={styles.mainHeading}>
+      <h1 className={utils.mainHeading}>
         Advancing the Practice of Healthcare Ethics
       </h1>
       <Hero />
-      <main className={styles.container}>
+      <main className={utils.container}>
         <section className={styles.about}>
           <p>
             BioEthx™ offers the first online web service for assisting in the

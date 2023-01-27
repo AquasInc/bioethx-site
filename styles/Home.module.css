@@ -1,16 +1,3 @@
-.container {
-  width: 85%;
-  max-width: 1366px;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-  flex: auto;
-}
-
-.mainHeading {
-  color: dodgerblue;
-  text-align: center;
-}
-
 .about {
   margin-top: 3rem;
 }
