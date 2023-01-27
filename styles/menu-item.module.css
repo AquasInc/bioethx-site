@@ -15,7 +15,7 @@
   color: dodgerblue;
 }
 
-.active {
+.highlight {
   color: dodgerblue;
 }
 
@@ -40,5 +40,9 @@
 
   .navLinkText:active {
     color: #333;
+  }
+
+  .highlight {
+    color: dodgerblue;
   }
 }

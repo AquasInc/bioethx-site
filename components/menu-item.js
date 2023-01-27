@@ -27,7 +27,7 @@ const MenuItem = ({ href, text, handleClick }) => {
           <Link
             href={href}
             className={`${styles.navLinkText} ${
-              atLinkDest() ? styles.active : ""
+              atLinkDest() ? styles.highlight : ""
             }`}
           >
             {text}
