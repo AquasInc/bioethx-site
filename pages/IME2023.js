@@ -8,14 +8,17 @@ export default function IME2023() {
     <Layout title="IME 2023">
       <div className={styles.container}>
         <div className={styles.ime2023}>
-          <h1 className={styles.mainHeading}>Artificial Intelligence is an Undeniable Reality</h1>
+          <h1 className={styles.mainHeading}>
+            Artificial Intelligence is an Undeniable Reality
+          </h1>
+          <h2 className={styles.mainHeading}>For Bioethics Committees</h2>
           <ul>
             <li><Link href={'#abstract'}>Abstract</Link></li>
             <li><Link href={'#poster'}>Poster</Link></li>
             <li><Link href={'https://www.youtube.com/watch?v=XBTt-V6wX88'} target='_blank'>Video</Link></li>
           </ul>
-          <hr />
-          <p id="abstract">
+          <hr id="abstract" />
+          <p>
             <b>Abstract</b>
             <br />
             <br />
