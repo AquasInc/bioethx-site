@@ -65,7 +65,7 @@ export default function IME2023() {
             Regional Representative in BioEthx Group, AQUAS, Inc. (bioethx.org)
           </p>
           <div id="poster">
-            <Image className={styles.poster} src='/poster.png' width={1080} height={1366} />
+            <Image className={styles.poster} src='/poster.jpg' width={1080} height={1366} />
           </div>
         </div>
       </div>

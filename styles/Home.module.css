@@ -29,18 +29,8 @@
 }
 
 .ime2023 ul a {
-  text-decoration: none;
-  color: #333;
   font-size: 20px;
   font-weight: bold;
-}
-
-.ime2023 ul a:hover {
-  text-decoration: underline;
-}
-
-.ime2023 ul a:active {
-  color: dodgerblue;
 }
 
 .poster {
