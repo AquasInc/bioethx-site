@@ -18,11 +18,14 @@
 }
 
 .ime2023 ul {
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .ime2023 ul li {
-  margin: 3rem;
+  margin: 2rem;
 }
 
 .ime2023 ul a {
@@ -42,6 +45,7 @@
 
 .poster {
   padding-top: 6rem;
+  width: 100%;
 }
 
 .mainHeading {
