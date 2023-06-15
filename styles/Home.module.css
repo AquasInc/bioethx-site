@@ -6,6 +6,38 @@
   flex: auto;
 }
 
+.ime2023 {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.ime2023 p {
+  padding-top: 6rem;
+  line-height: 24px;
+}
+
+.ime2023 ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.ime2023 ul li {
+  margin: 2rem;
+}
+
+.ime2023 ul a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.poster {
+  padding-top: 6rem;
+  width: 100%;
+}
+
 .mainHeading {
   color: dodgerblue;
   text-align: center;
