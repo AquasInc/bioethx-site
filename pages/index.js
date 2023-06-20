@@ -2,10 +2,12 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import styles from "../styles/Home.module.css";
+import Toast from "../components/toast";
 
 export default function Home() {
   return (
     <Layout title="Online Medical Ethics consult Management System">
+      <Toast />
       <h1 className={styles.mainHeading}>
         Advancing the Practice of Healthcare Ethics
       </h1>
