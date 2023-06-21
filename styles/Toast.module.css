@@ -1,0 +1,29 @@
+.toast {
+  position: fixed;
+  right: 0;
+  width: fit-content;
+  border: 5px solid dodgerblue;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: white;
+  background: #333;
+  animation: slideIn;
+  animation-duration: 2.5s;
+  font-weight: bold;
+  z-index: 2;
+}
+
+@keyframes slideIn {
+  from {
+    right: -500px;
+  }
+
+  80% {
+    right: -500px;
+  }
+
+  to {
+    right: 0;
+  }
+}

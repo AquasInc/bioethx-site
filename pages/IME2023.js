@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
+import aiImage from '../public/ai.webp';
 
 export default function IME2023() {
   return (
@@ -12,6 +13,9 @@ export default function IME2023() {
             Artificial Intelligence is an Undeniable Reality
           </h1>
           <h2 className={styles.mainHeading}>For Bioethics Committees</h2>
+          <div style={{position: 'relative', width: '100%', height: '70vh'}}>
+            <Image src={aiImage} fill={true} priority={true} placeholder={'blur'} />
+          </div>
           <ul>
             <li><Link href={'#abstract'}>Abstract</Link></li>
             <li><Link href={'#poster'}>Poster</Link></li>
@@ -61,7 +65,7 @@ export default function IME2023() {
             <br />
             Bioethics Committee Member in Argentina  
             <br />
-            Lawyer, Master in medical ethics.  
+            Lawyer, Master in Medical Ethics.  
             <br />
             Bioethics Consultant  
             <br />
