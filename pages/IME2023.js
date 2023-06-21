@@ -65,7 +65,7 @@ export default function IME2023() {
             <br />
             Bioethics Committee Member in Argentina  
             <br />
-            Lawyer, Master in medical ethics.  
+            Lawyer, Master in Medical Ethics.  
             <br />
             Bioethics Consultant  
             <br />
