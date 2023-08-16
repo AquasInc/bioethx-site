@@ -13,8 +13,8 @@ const Footer = () => (
         <p>
           <strong>Email:</strong>
           <br />
-          <a href="mailto:ethics@bioethx.org" className={linkText}>
-            ethics@bioethx.org
+          <a href="mailto:info@bioethx.org" className={linkText}>
+            info@bioethx.org
           </a>
         </p>
         <p>
